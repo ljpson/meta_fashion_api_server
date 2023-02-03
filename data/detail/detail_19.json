@@ -1,0 +1,63 @@
+{
+	"content": {
+		"id": "19",
+		"contentTitle": "' WAVE of LOVE '",
+		"contentInfo": "사랑을 시각화한 하트 그래픽과 파도의 움직임을 연상시키는 드레이핑으로 입체적이고 볼륨감있는 로맨틱 룩",
+		"designer": {
+			"name": "송현희, 최경호",
+			"description": "남성복 출신의 최경호 디자이너와 여성복 출신의 송현희 디자이너가 만들어가는 HOLY NUMBER 7은 매 시즌 성경을 기반으로 긍정적인 스토리를 이야기하며, 이 시대에 HOLY NUMBER 7만의 방식으로 긍정과 희망의 스토리를 녹여내 뻔하지 않고 'FUN' 한, 위트있지만 가볍지 않은 디자인으로 '입는 사람의 언어'가 되는 패션을 만들고자 합니다.",
+			"profileUrl": "https://ktfa-bucket.s3.ap-northeast-2.amazonaws.com/19/profile/designer_thumb.jpg"
+		},
+		"type": [
+			"ar"
+		],
+		"tags": [
+			"홀리넘버세븐",
+			"HOLY NUMBER 7"
+		],
+		"thumbnails": [
+			"https://ktfa-bucket.s3.ap-northeast-2.amazonaws.com/19/main/top_thumb_001.webp"
+		],
+		"concept": {
+			"title": "Concept",
+			"description": "concept description",
+			"url": [
+				"https://kt-meta-fashion.s3.ap-northeast-2.amazonaws.com/images/thumbnails/1.png"
+			]
+		},
+		"media": {
+			"title": "Making Film",
+			"description": "",
+			"url": [
+				"https://youtu.be/4fikvcuirtY",
+				"https://youtu.be/POe9SOEKotk"
+			]
+		},
+		"detail": {
+			"title": "Details",
+			"description": "상세이미지 설명",
+			"url": [
+				"https://kt-meta-fashion.s3.ap-northeast-2.amazonaws.com/images/thumbnails/1.png"
+			]
+		},
+		"assets": {
+			"info": {
+				"name": "' WAVE of LOVE '",
+				"description": "description",
+				"thumbnail": "https://ktfa-bucket.s3.ap-northeast-2.amazonaws.com/19/ar/ar_content_thumb_001.png",
+				"watermarkUrl": "https://ktfa-bucket.s3.ap-northeast-2.amazonaws.com/wordmark.png"
+			},
+			"aos": {
+				"avatarUrl": "",
+				"arUrl": "https://kt-meta-fashion.s3.ap-northeast-2.amazonaws.com/assets/aos/kt_wear_01",
+				"updateDt": 1605663586627
+			},
+			"ios": {
+				"avatarUrl": "",
+				"arUrl": "https://kt-meta-fashion.s3.ap-northeast-2.amazonaws.com/assets/ios/kt_wear_01",
+				"updateDt": 1605663586627
+			}
+		},
+		"updateDt": 1605663586627
+	}
+}

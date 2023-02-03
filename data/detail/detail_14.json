@@ -1,0 +1,63 @@
+{
+	"content": {
+		"id": "14",
+		"contentTitle": "Futuristic Luxury",
+		"contentInfo": "버려진 옷들을 해체하고 재결합하여 만든 의상. 단순히 미적인 목적으로 가미된 디테일이 아닌 해체와 재구성의 과정에서 탄생되는 실루엣과 디테일로, 업사이클링을 통해 만들어지는 디자인만이 가진 특별한 미학을 제시한다.",
+		"designer": {
+			"name": "Goyoungtae",
+			"description": "‘패션에 예술을 불어넣다’라는 디자이너로서의 철학을 실현하기 위해 브랜드 얼킨(ul:kin)을 런칭하였습니다. 예술가의 실제 회화 작품으로 만드는 가방을 대표 아이템으로 업사이클링과 예술, 해체와 재구성, 하이브리드 감성을 통해 매 시즌 다양한 메시지를 패션을 통해 전달하고, 예술과 패션의 경계를 넘나드는 디자인을 선보이고자 합니다. ",
+			"profileUrl": "https://ktfa-bucket.s3.ap-northeast-2.amazonaws.com/14/profile/designer_thumb.jpg"
+		},
+		"type": [
+			"ar"
+		],
+		"tags": [
+			"얼킨",
+			"ul:kin"
+		],
+		"thumbnails": [
+			"https://ktfa-bucket.s3.ap-northeast-2.amazonaws.com/14/main/top_thumb_001.webp"
+		],
+		"concept": {
+			"title": "Concept",
+			"description": "concept description",
+			"url": [
+				"https://kt-meta-fashion.s3.ap-northeast-2.amazonaws.com/images/thumbnails/1.png"
+			]
+		},
+		"media": {
+			"title": "Making Film",
+			"description": "",
+			"url": [
+				"https://youtu.be/4fikvcuirtY",
+				"https://youtu.be/POe9SOEKotk"
+			]
+		},
+		"detail": {
+			"title": "Details",
+			"description": "상세이미지 설명",
+			"url": [
+				"https://kt-meta-fashion.s3.ap-northeast-2.amazonaws.com/images/thumbnails/1.png"
+			]
+		},
+		"assets": {
+			"info": {
+				"name": "Futuristic Luxury",
+				"description": "description",
+				"thumbnail": "https://ktfa-bucket.s3.ap-northeast-2.amazonaws.com/14/ar/ar_content_thumb_001.png",
+				"watermarkUrl": "https://ktfa-bucket.s3.ap-northeast-2.amazonaws.com/wordmark.png"
+			},
+			"aos": {
+				"avatarUrl": "",
+				"arUrl": "https://kt-meta-fashion.s3.ap-northeast-2.amazonaws.com/assets/aos/kt_wear_11",
+				"updateDt": 1605663586627
+			},
+			"ios": {
+				"avatarUrl": "",
+				"arUrl": "https://kt-meta-fashion.s3.ap-northeast-2.amazonaws.com/assets/ios/kt_wear_11",
+				"updateDt": 1605663586627
+			}
+		},
+		"updateDt": 1605663586627
+	}
+}

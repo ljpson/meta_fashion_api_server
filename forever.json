@@ -1,0 +1,7 @@
+{
+  "uid": "server.cms",
+  "append": true,
+  "watch": false,
+  "script": "./dist/app.js",
+  "args": ["--port", "8081"]
+}

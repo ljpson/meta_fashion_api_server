@@ -1,0 +1,649 @@
+{
+
+    "categories": [
+      {
+        "id": "0",
+        "title": "전체",
+        "updateDt": 1605663586627
+      },
+      {
+        "id": "1",
+        "title": "리슬",
+        "updateDt": 1605663586627
+      },
+      {
+        "id": "2",
+        "title": "k패션 오디션",
+        "updateDt": 1605663586627
+      }
+    ],
+    "contents": [
+      {
+        "id": "1",
+        "parentId": "1",
+        "contentTitle": "행복한 저고리 패딩 - 시간의 문 앞에서",
+        "contentInfo": "행복으로 풍성하게 부풀려진 후드점퍼와 시스루 저고리와 기쁨으로 반짝이는 한복치마를 착용",
+        "thumbnail": "https://ktfa-bucket.s3.ap-northeast-2.amazonaws.com/1/main/top_thumb_001.jpg",
+        "designer": {
+          "name": "황이슬",
+          "description": "'(현) 리슬 대표 (2014년 런칭) BTS 한복을 만든 디자이너 밀라노 패션위크에 오른 최초의 한복 브랜드 포브스, 뉴욕타임지가 주목한 한복 브랜드",
+          "profileUrl": "https://ktfa-bucket.s3.ap-northeast-2.amazonaws.com/1/profile/designer_thumb.jpg"
+        },
+        "assets": {
+          "info": {
+            "name": "name",
+            "description": "description",
+            "thumbnail": "thumbnail",
+            "watermarkUrl": "https://ktfa-bucket.s3.ap-northeast-2.amazonaws.com/wordmark.png"
+          },
+          "aos": {
+            "avatarUrl": "",
+            "arUrl": "https://kt-meta-fashion.s3.ap-northeast-2.amazonaws.com/assets/aos/kt_wear_01",
+            "updateDt": 1605663586627
+          },
+          "ios": {
+            "avatarUrl": "",
+            "arUrl": "https://kt-meta-fashion.s3.ap-northeast-2.amazonaws.com/assets/ios/kt_wear_01",
+            "updateDt": 1605663586627
+          }
+        },
+        "type": ["avatar", "ar"],
+        "tags": ["리슬"],
+        "updateDt": 1605663586627
+      },
+      {
+        "id": "2",
+        "parentId": "1",
+        "contentTitle": "활기찬 삼족오 셋업 - 시간의 문 앞에서",
+        "contentInfo": "고구려 시대의 유(저고리)와 고(바지)를 현대식 트레이닝복으로 착용한 모습",
+        "thumbnail": "https://ktfa-bucket.s3.ap-northeast-2.amazonaws.com/2/main/top_thumb_001.jpg",
+        "designer": {
+          "name": "황이슬",
+          "description": "'(현) 리슬 대표 (2014년 런칭) BTS 한복을 만든 디자이너 밀라노 패션위크에 오른 최초의 한복 브랜드 포브스, 뉴욕타임지가 주목한 한복 브랜드",
+          "profileUrl": "https://ktfa-bucket.s3.ap-northeast-2.amazonaws.com/2/profile/designer_thumb.jpg"
+        },
+        "assets": {
+          "info": {
+            "name": "name",
+            "description": "description",
+            "thumbnail": "thumbnail",
+            "watermarkUrl": "https://ktfa-bucket.s3.ap-northeast-2.amazonaws.com/wordmark.png"
+          },
+          "aos": {
+            "avatarUrl": "",
+            "arUrl": "https://kt-meta-fashion.s3.ap-northeast-2.amazonaws.com/assets/aos/kt_wear_02",
+            "updateDt": 1605663586627
+          },
+          "ios": {
+            "avatarUrl": "",
+            "arUrl": "https://kt-meta-fashion.s3.ap-northeast-2.amazonaws.com/assets/ios/kt_wear_02",
+            "updateDt": 1605663586627
+          }
+        },
+        "type": ["avatar", "ar"],
+        "tags": ["리슬"],
+        "updateDt": 1605663586627
+      },
+      {
+        "id": "3",
+        "parentId": "1",
+        "contentTitle": "영감이 반짝이는 저고리 - 시간의 문 앞에서",
+        "contentInfo": "고구려 시대의 유(저고리)에서 착안한 재킷과 ‘시간'을 주름잡아 만든 치마 위에 투명한 꽃벨트로 코디네이트",
+        "thumbnail": "https://ktfa-bucket.s3.ap-northeast-2.amazonaws.com/3/main/top_thumb_001.jpg",
+        "designer": {
+          "name": "황이슬",
+          "description": "'(현) 리슬 대표 (2014년 런칭) BTS 한복을 만든 디자이너 밀라노 패션위크에 오른 최초의 한복 브랜드 포브스, 뉴욕타임지가 주목한 한복 브랜드",
+          "profileUrl": "https://ktfa-bucket.s3.ap-northeast-2.amazonaws.com/3/profile/designer_thumb.jpg"
+        },
+        "assets": {
+          "info": {
+            "name": "name",
+            "description": "description",
+            "thumbnail": "thumbnail",
+            "watermarkUrl": "https://ktfa-bucket.s3.ap-northeast-2.amazonaws.com/wordmark.png"
+          },
+          "aos": {
+            "avatarUrl": "",
+            "arUrl": "https://kt-meta-fashion.s3.ap-northeast-2.amazonaws.com/assets/aos/kt_wear_04",
+            "updateDt": 1605663586627
+          },
+          "ios": {
+            "avatarUrl": "",
+            "arUrl": "https://kt-meta-fashion.s3.ap-northeast-2.amazonaws.com/assets/ios/kt_wear_04",
+            "updateDt": 1605663586627
+          }
+        },
+        "type": ["avatar", "ar"],
+        "tags": ["리슬"],
+        "updateDt": 1605663586627
+      },
+      {
+        "id": "4",
+        "parentId": "1",
+        "contentTitle": "무용총 설레임 저고리 - 시간의 문 앞에서",
+        "contentInfo": "고구려 시대의 유(저고리)에서 착안한 니트 저고리에 나풀거리는 2단 플리츠 치마를 착용",
+        "thumbnail": "https://ktfa-bucket.s3.ap-northeast-2.amazonaws.com/4/main/top_thumb_001.jpg",
+        "designer": {
+          "name": "황이슬",
+          "description": "'(현) 리슬 대표 (2014년 런칭) BTS 한복을 만든 디자이너 밀라노 패션위크에 오른 최초의 한복 브랜드 포브스, 뉴욕타임지가 주목한 한복 브랜드",
+          "profileUrl": "https://ktfa-bucket.s3.ap-northeast-2.amazonaws.com/4/profile/designer_thumb.jpg"
+        },
+        "assets": {
+          "info": {
+            "name": "name",
+            "description": "description",
+            "thumbnail": "thumbnail",
+            "watermarkUrl": "https://ktfa-bucket.s3.ap-northeast-2.amazonaws.com/wordmark.png"
+          },
+          "aos": {
+            "avatarUrl": "",
+            "arUrl": "https://kt-meta-fashion.s3.ap-northeast-2.amazonaws.com/assets/aos/kt_wear_05",
+            "updateDt": 1605663586627
+          },
+          "ios": {
+            "avatarUrl": "",
+            "arUrl": "https://kt-meta-fashion.s3.ap-northeast-2.amazonaws.com/assets/ios/kt_wear_05",
+            "updateDt": 1605663586627
+          }
+        },
+        "type": ["avatar", "ar"],
+        "tags": ["리슬"],
+        "updateDt": 1605663586627
+      },
+      {
+        "id": "5",
+        "parentId": "1",
+        "contentTitle": "동암리고분 도전의 바지 - 시간의 문 앞에서",
+        "contentInfo": "몸에 핏트되도록 스포티한 감성을 살려만든 저고리모양 탑과 동암리 고분의 바둑판무늬 바지",
+        "thumbnail": "https://ktfa-bucket.s3.ap-northeast-2.amazonaws.com/5/main/top_thumb_001.jpg",
+        "designer": {
+          "name": "황이슬",
+          "description": "'(현) 리슬 대표 (2014년 런칭) BTS 한복을 만든 디자이너 밀라노 패션위크에 오른 최초의 한복 브랜드 포브스, 뉴욕타임지가 주목한 한복 브랜드",
+          "profileUrl": "https://ktfa-bucket.s3.ap-northeast-2.amazonaws.com/5/profile/designer_thumb.jpg"
+        },
+        "assets": {
+          "info": {
+            "name": "name",
+            "description": "description",
+            "thumbnail": "thumbnail",
+            "watermarkUrl": "https://ktfa-bucket.s3.ap-northeast-2.amazonaws.com/wordmark.png"
+          },
+          "aos": {
+            "avatarUrl": "",
+            "arUrl": "https://kt-meta-fashion.s3.ap-northeast-2.amazonaws.com/assets/aos/kt_wear_01",
+            "updateDt": 1605663586627
+          },
+          "ios": {
+            "avatarUrl": "",
+            "arUrl": "https://kt-meta-fashion.s3.ap-northeast-2.amazonaws.com/assets/ios/kt_wear_01",
+            "updateDt": 1605663586627
+          }
+        },
+        "type": ["avatar", "ar"],
+        "tags": ["리슬"],
+        "updateDt": 1605663586627
+      },
+      {
+        "id": "6",
+        "parentId": "1",
+        "contentTitle": "선비의 지혜가 담긴 소창의 재킷 - 달빛 조선",
+        "contentInfo": "한국의 소창의와 서양식 재킷의 라펠을 결합해서 만든 시스루 코트와 검정 치마를 덧입었다",
+        "thumbnail": "https://ktfa-bucket.s3.ap-northeast-2.amazonaws.com/6/main/top_thumb_001.jpg",
+        "designer": {
+          "name": "황이슬",
+          "description": "'(현) 리슬 대표 (2014년 런칭) BTS 한복을 만든 디자이너 밀라노 패션위크에 오른 최초의 한복 브랜드 포브스, 뉴욕타임지가 주목한 한복 브랜드",
+          "profileUrl": "https://ktfa-bucket.s3.ap-northeast-2.amazonaws.com/6/profile/designer_thumb.jpg"
+        },
+        "assets": {
+          "info": {
+            "name": "name",
+            "description": "description",
+            "thumbnail": "thumbnail",
+            "watermarkUrl": "https://ktfa-bucket.s3.ap-northeast-2.amazonaws.com/wordmark.png"
+          },
+          "aos": {
+            "avatarUrl": "",
+            "arUrl": "https://kt-meta-fashion.s3.ap-northeast-2.amazonaws.com/assets/aos/kt_wear_02",
+            "updateDt": 1605663586627
+          },
+          "ios": {
+            "avatarUrl": "",
+            "arUrl": "https://kt-meta-fashion.s3.ap-northeast-2.amazonaws.com/assets/ios/kt_wear_02",
+            "updateDt": 1605663586627
+          }
+        },
+        "type": ["avatar", "ar"],
+        "tags": ["리슬"],
+        "updateDt": 1605663586627
+      },
+      {
+        "id": "7",
+        "parentId": "1",
+        "contentTitle": "왕의 위엄이 흐르는 일월오봉 치마 - 달빛 조선",
+        "contentInfo": "조선시대 저고리와 가슴가리개를 레이어드한 상의와 부인들의 예장복 중 하나인 '거들치마'를 착장",
+        "thumbnail": "https://ktfa-bucket.s3.ap-northeast-2.amazonaws.com/7/main/top_thumb_001.jpg",
+        "designer": {
+          "name": "황이슬",
+          "description": "'(현) 리슬 대표 (2014년 런칭) BTS 한복을 만든 디자이너 밀라노 패션위크에 오른 최초의 한복 브랜드 포브스, 뉴욕타임지가 주목한 한복 브랜드",
+          "profileUrl": "https://ktfa-bucket.s3.ap-northeast-2.amazonaws.com/7/profile/designer_thumb.jpg"
+        },
+        "assets": {
+          "info": {
+            "name": "name",
+            "description": "description",
+            "thumbnail": "thumbnail",
+            "watermarkUrl": "https://ktfa-bucket.s3.ap-northeast-2.amazonaws.com/wordmark.png"
+          },
+          "aos": {
+            "avatarUrl": "",
+            "arUrl": "https://kt-meta-fashion.s3.ap-northeast-2.amazonaws.com/assets/aos/kt_wear_04",
+            "updateDt": 1605663586627
+          },
+          "ios": {
+            "avatarUrl": "",
+            "arUrl": "https://kt-meta-fashion.s3.ap-northeast-2.amazonaws.com/assets/ios/kt_wear_04",
+            "updateDt": 1605663586627
+          }
+        },
+        "type": ["avatar", "ar"],
+        "tags": ["리슬"],
+        "updateDt": 1605663586627
+      },
+      {
+        "id": "8",
+        "parentId": "1",
+        "contentTitle": "흥이 날리는 도포조끼 - 달빛 조선",
+        "contentInfo": "조선시대 선비들의 도포에서 영감받은 조끼에 너른바지를 착장",
+        "thumbnail": "https://ktfa-bucket.s3.ap-northeast-2.amazonaws.com/8/main/top_thumb_001.jpg",
+        "designer": {
+          "name": "황이슬",
+          "description": "'(현) 리슬 대표 (2014년 런칭) BTS 한복을 만든 디자이너 밀라노 패션위크에 오른 최초의 한복 브랜드 포브스, 뉴욕타임지가 주목한 한복 브랜드",
+          "profileUrl": "https://ktfa-bucket.s3.ap-northeast-2.amazonaws.com/8/profile/designer_thumb.jpg"
+        },
+        "assets": {
+          "info": {
+            "name": "name",
+            "description": "description",
+            "thumbnail": "thumbnail",
+            "watermarkUrl": "https://ktfa-bucket.s3.ap-northeast-2.amazonaws.com/wordmark.png"
+          },
+          "aos": {
+            "avatarUrl": "",
+            "arUrl": "https://kt-meta-fashion.s3.ap-northeast-2.amazonaws.com/assets/aos/kt_wear_05",
+            "updateDt": 1605663586627
+          },
+          "ios": {
+            "avatarUrl": "",
+            "arUrl": "https://kt-meta-fashion.s3.ap-northeast-2.amazonaws.com/assets/ios/kt_wear_05",
+            "updateDt": 1605663586627
+          }
+        },
+        "type": ["avatar", "ar"],
+        "tags": ["리슬"],
+        "updateDt": 1605663586627
+      },
+      {
+        "id": "9",
+        "parentId": "1",
+        "contentTitle": "픙류가득 배자와 청바지 - 달빛 조선",
+        "contentInfo": "소매에 모란자수꽃이 피어나는 저고리와 배자조끼에 대님소재로 패치워크한 바지를 착용",
+        "thumbnail": "https://ktfa-bucket.s3.ap-northeast-2.amazonaws.com/9/main/top_thumb_001.jpg",
+        "designer": {
+          "name": "황이슬",
+          "description": "'(현)리슬 대표 (2014년 런칭) BTS 한복을 만든 디자이너 밀라노 패션위크에 오른 최초의 한복 브랜드 포브스, 뉴욕타임지가 주목한 한복 브랜드",
+          "profileUrl": "https://ktfa-bucket.s3.ap-northeast-2.amazonaws.com/9/profile/designer_thumb.jpg"
+        },
+        "assets": {
+          "info": {
+            "name": "name",
+            "description": "description",
+            "thumbnail": "thumbnail",
+            "watermarkUrl": "https://ktfa-bucket.s3.ap-northeast-2.amazonaws.com/wordmark.png"
+          },
+          "aos": {
+            "avatarUrl": "",
+            "arUrl": "https://kt-meta-fashion.s3.ap-northeast-2.amazonaws.com/assets/aos/kt_wear_11",
+            "updateDt": 1605663586627
+          },
+          "ios": {
+            "avatarUrl": "",
+            "arUrl": "https://kt-meta-fashion.s3.ap-northeast-2.amazonaws.com/assets/ios/kt_wear_11",
+            "updateDt": 1605663586627
+          }
+        },
+        "type": ["avatar", "ar"],
+        "tags": ["리슬"],
+        "updateDt": 1605663586627
+      },
+      {
+        "id": "10",
+        "parentId": "1",
+        "contentTitle": "왕의 위엄이 흐르는 일월오봉 답호 - 달빛 조선",
+        "contentInfo": "왕을 상징하는 일월오봉도가 움직이는 조선시대 '답호'형 로브위에 너른 바지를 착장",
+        "thumbnail": "https://ktfa-bucket.s3.ap-northeast-2.amazonaws.com/10/main/top_thumb_001.jpg",
+        "designer": {
+          "name": "황이슬",
+          "description": "'(현) 리슬 대표 (2014년 런칭) BTS 한복을 만든 디자이너 밀라노 패션위크에 오른 최초의 한복 브랜드 포브스, 뉴욕타임지가 주목한 한복 브랜드",
+          "profileUrl": "https://ktfa-bucket.s3.ap-northeast-2.amazonaws.com/10/profile/designer_thumb.jpg"
+        },
+        "assets": {
+          "info": {
+            "name": "name",
+            "description": "description",
+            "thumbnail": "thumbnail",
+            "watermarkUrl": "https://ktfa-bucket.s3.ap-northeast-2.amazonaws.com/wordmark.png"
+          },
+          "aos": {
+            "avatarUrl": "",
+            "arUrl": "https://kt-meta-fashion.s3.ap-northeast-2.amazonaws.com/assets/aos/kt_wear_01",
+            "updateDt": 1605663586627
+          },
+          "ios": {
+            "avatarUrl": "",
+            "arUrl": "https://kt-meta-fashion.s3.ap-northeast-2.amazonaws.com/assets/ios/kt_wear_01",
+            "updateDt": 1605663586627
+          }
+        },
+        "type": ["avatar", "ar"],
+        "tags": ["리슬"],
+        "updateDt": 1605663586627
+      },
+      {
+        "id": "11",
+        "parentId": "2",
+        "contentTitle": "Bulky Man",
+        "contentInfo": "패턴모양을 통해 내부의 Padded 솜과 Shiny한 안감이 조화를 이뤄, Bulky한 자태를 연출해냈습니다. 이번 시즌 개발한 금속 지퍼 풀러는 새로운 타입으로, 본래 Satin 코팅 & 음각의 콤비대신 양각의 로고 타입을 선택하여 좀 더 로고에 집중할 수 있는 효과를 줄 수 있도록 개발하였습니다.",
+        "thumbnail": "https://ktfa-bucket.s3.ap-northeast-2.amazonaws.com/11/main/top_thumb_001.webp",
+        "designer": {
+          "name": "이원재",
+          "description": "51퍼센트(51PERCENT)는 기계공학을 전공한 디자이너의 성향이 반영되어 구조적인 디자인과 메탈릭한 디테일이 제품 곳곳에서 드러납니다. 매 시즌 구조적인 실루엣과 디테일을 다양한 주제와 함께 선보입니다. 51퍼센트는 세련된 남성들이 즐길 수 있는, 상업성과 예술성을 두루 갖춘 제품을 선보입니다.",
+          "profileUrl": "https://ktfa-bucket.s3.ap-northeast-2.amazonaws.com/11/profile/designer_thumb.jpg"
+        },
+        "assets": {
+          "info": {
+            "name": "Bulky Man",
+            "description": "description",
+            "thumbnail": "https://ktfa-bucket.s3.ap-northeast-2.amazonaws.com/11/ar/ar_content_thumb_001.png",
+            "watermarkUrl": "https://ktfa-bucket.s3.ap-northeast-2.amazonaws.com/wordmark.png"
+          },
+          "aos": {
+            "avatarUrl": "",
+            "arUrl": "https://kt-meta-fashion.s3.ap-northeast-2.amazonaws.com/assets/aos/kt_wear_02",
+            "updateDt": 1605663586627
+          },
+          "ios": {
+            "avatarUrl": "",
+            "arUrl": "https://kt-meta-fashion.s3.ap-northeast-2.amazonaws.com/assets/ios/kt_wear_02",
+            "updateDt": 1605663586627
+          }
+        },
+        "type": ["ar"],
+        "tags": ["51퍼센트", "51PERCENT"],
+        "updateDt": 1605663586627
+      },
+      {
+        "id": "12",
+        "parentId": "2",
+        "contentTitle": "graphic Printed Mat Bag",
+        "contentInfo": "곡선 디테일이 강조된 금속 프레임 방식 박스백에 탈부착이 가능한 스트랩을 사용하여 토트와 숄더 스타일. 자개 느낌의 셀룰로이드 체인 장식 등으로 다양하게 연출 가능",
+        "thumbnail": "https://ktfa-bucket.s3.ap-northeast-2.amazonaws.com/12/main/top_thumb_001.webp",
+        "designer": {
+          "name": "하재경, 허인준",
+          "description": "nuer는 두 명의 디자이너인 하재경과 허인준이 만든 모던 클래식 감성의 패션 브랜드로 다년간 이탈리아와 중국 그리고 한국 패션 브랜드에서 쌓아온 경험과 감성을 바탕으로 2020년 7월 nuer의 핸드백 컬렉션을 론칭하였습니다.",
+          "profileUrl": "https://ktfa-bucket.s3.ap-northeast-2.amazonaws.com/12/profile/designer_thumb.jpg"
+        },
+        "assets": {
+          "info": {
+            "name": "graphic Printed Mat Bag",
+            "description": "description",
+            "thumbnail": "https://ktfa-bucket.s3.ap-northeast-2.amazonaws.com/12/ar/ar_content_thumb_001.png",
+            "watermarkUrl": "https://ktfa-bucket.s3.ap-northeast-2.amazonaws.com/wordmark.png"
+          },
+          "aos": {
+            "avatarUrl": "",
+            "arUrl": "https://kt-meta-fashion.s3.ap-northeast-2.amazonaws.com/assets/aos/kt_wear_04",
+            "updateDt": 1605663586627
+          },
+          "ios": {
+            "avatarUrl": "",
+            "arUrl": "https://kt-meta-fashion.s3.ap-northeast-2.amazonaws.com/assets/ios/kt_wear_04",
+            "updateDt": 1605663586627
+          }
+        },
+        "type": ["ar"],
+        "tags": ["뉴이", "nuer"],
+        "updateDt": 1605663586627
+      },
+      {
+        "id": "13",
+        "parentId": "2",
+        "contentTitle": "아름다운 수중정원에 피어난 코랄 리프",
+        "contentInfo": "래글런 소매의 부드러움과 여성스러운 셔링 디테일, 두칸의 시그니쳐 프린트를 가미한 A라인 셔츠형 원피스",
+        "thumbnail": "https://ktfa-bucket.s3.ap-northeast-2.amazonaws.com/13/main/top_thumb_001.webp",
+        "designer": {
+          "name": "최충훈",
+          "description": "색감이 뛰어난 패션디자이너 프랑스에서 패션디자이너, 메이크업 아티스트, 스타일리스트로 활동한 경험이 독창적인 색감과 패턴으로 나타난다. 색에 대한 감성이 뛰어나고, 남들과 다른 시선으로 사물을 대하고 그 사물을 아트웍으로 재창조한다. 색과 패턴을 패션에 조합하고, 새로운 트렌드를 만들어간다. 두칸은 아름다운 자연, 빛, 사물 등을 디자이너의 판타지 감성으로 직접 그려서 재해석한 그래픽룩 감성브랜드이다. 매 시즌, 디자이너가 직접 그린 오리지널 프린트패턴을 접목해 새롭고 신선한 감성을 그려낸다.",
+          "profileUrl": "https://ktfa-bucket.s3.ap-northeast-2.amazonaws.com/13/profile/designer_thumb.jpg"
+        },
+        "assets": {
+          "info": {
+            "name": "아름다운 수중정원에 피어난 코랄 리프",
+            "description": "description",
+            "thumbnail": "https://ktfa-bucket.s3.ap-northeast-2.amazonaws.com/13/ar/ar_content_thumb_001.png",
+            "watermarkUrl": "https://ktfa-bucket.s3.ap-northeast-2.amazonaws.com/wordmark.png"
+          },
+          "aos": {
+            "avatarUrl": "",
+            "arUrl": "https://kt-meta-fashion.s3.ap-northeast-2.amazonaws.com/assets/aos/kt_wear_05",
+            "updateDt": 1605663586627
+          },
+          "ios": {
+            "avatarUrl": "",
+            "arUrl": "https://kt-meta-fashion.s3.ap-northeast-2.amazonaws.com/assets/ios/kt_wear_05",
+            "updateDt": 1605663586627
+          }
+        },
+        "type": ["ar"],
+        "tags": ["두칸"],
+        "updateDt": 1605663586627
+      },
+      {
+        "id": "14",
+        "parentId": "2",
+        "contentTitle": "Futuristic Luxury",
+        "contentInfo": "버려진 옷들을 해체하고 재결합하여 만든 의상. 단순히 미적인 목적으로 가미된 디테일이 아닌 해체와 재구성의 과정에서 탄생되는 실루엣과 디테일로, 업사이클링을 통해 만들어지는 디자인만이 가진 특별한 미학을 제시한다.",
+        "thumbnail": "https://ktfa-bucket.s3.ap-northeast-2.amazonaws.com/14/main/top_thumb_001.webp",
+        "designer": {
+          "name": "Goyoungtae",
+          "description": "‘패션에 예술을 불어넣다’라는 디자이너로서의 철학을 실현하기 위해 브랜드 얼킨(ul:kin)을 런칭하였습니다. 예술가의 실제 회화 작품으로 만드는 가방을 대표 아이템으로 업사이클링과 예술, 해체와 재구성, 하이브리드 감성을 통해 매 시즌 다양한 메시지를 패션을 통해 전달하고, 예술과 패션의 경계를 넘나드는 디자인을 선보이고자 합니다. ",
+          "profileUrl": "https://ktfa-bucket.s3.ap-northeast-2.amazonaws.com/14/profile/designer_thumb.jpg"
+        },
+        "assets": {
+          "info": {
+            "name": "Futuristic Luxury",
+            "description": "description",
+            "thumbnail": "https://ktfa-bucket.s3.ap-northeast-2.amazonaws.com/14/ar/ar_content_thumb_001.png",
+            "watermarkUrl": "https://ktfa-bucket.s3.ap-northeast-2.amazonaws.com/wordmark.png"
+          },
+          "aos": {
+            "avatarUrl": "",
+            "arUrl": "https://kt-meta-fashion.s3.ap-northeast-2.amazonaws.com/assets/aos/kt_wear_11",
+            "updateDt": 1605663586627
+          },
+          "ios": {
+            "avatarUrl": "",
+            "arUrl": "https://kt-meta-fashion.s3.ap-northeast-2.amazonaws.com/assets/ios/kt_wear_11",
+            "updateDt": 1605663586627
+          }
+        },
+        "type": ["ar"],
+        "tags": ["얼킨", "ul:kin"],
+        "updateDt": 1605663586627
+      },
+      {
+        "id": "15",
+        "parentId": "2",
+        "contentTitle": "A BAG MINI Up_Jean",
+        "contentInfo": "브랜드 대표 이니셜 'A'를 형상화한 쉐입으로 스몰 사이즈 토트백으로 중앙 지퍼가 넓게 열리고 하단의 마개가 있어서 오픈시 물건이 쏟아지지 않도록 해줌. 작아보이지만 넉넉한수납과 가벼운 무게감으로 착장에 좋고, 크로스 끈이 있어 크로스백으로도 사용 가능함",
+        "thumbnail": "https://ktfa-bucket.s3.ap-northeast-2.amazonaws.com/15/main/top_thumb_001.webp",
+        "designer": {
+          "name": "심윤주, 심보한",
+          "description": "핸드백 디자이너. 패션에 뜻을 두고, 기계공학과를 중퇴하고 이태리에서 패션디자인을 전공하고 베르사체에 입사하여 핸드백 디자인 시작. 약 15년간 핸드백 디자이너로 활동하고 있으며, 현재는 패션 디자인과 친환경을 접목하기 위한 디자인 개발에 노력중.",
+          "profileUrl": "https://ktfa-bucket.s3.ap-northeast-2.amazonaws.com/15/profile/designer_thumb.jpg"
+        },
+        "assets": {
+          "info": {
+            "name": "A BAG MINI Up_Jean",
+            "description": "description",
+            "thumbnail": "https://ktfa-bucket.s3.ap-northeast-2.amazonaws.com/15/ar/ar_content_thumb_001.png",
+            "watermarkUrl": "https://ktfa-bucket.s3.ap-northeast-2.amazonaws.com/wordmark.png"
+          },
+          "aos": {
+            "avatarUrl": "",
+            "arUrl": "https://kt-meta-fashion.s3.ap-northeast-2.amazonaws.com/assets/aos/kt_wear_01",
+            "updateDt": 1605663586627
+          },
+          "ios": {
+            "avatarUrl": "",
+            "arUrl": "https://kt-meta-fashion.s3.ap-northeast-2.amazonaws.com/assets/ios/kt_wear_01",
+            "updateDt": 1605663586627
+          }
+        },
+        "type": ["ar"],
+        "tags": ["에임에이지 스튜디오", "AMAG STUDIO"],
+        "updateDt": 1605663586627
+      },
+      {
+        "id": "16",
+        "parentId": "2",
+        "contentTitle": "포근한 필로우 룩",
+        "contentInfo": "정교한 스티치 라인과 광택감이 돋보이는 카고형 패딩 팬츠와 전체적인 프릴 디테일로 필로우(베개)가 연상되는 유니크 쿠션룩",
+        "thumbnail": "https://ktfa-bucket.s3.ap-northeast-2.amazonaws.com/16/main/top_thumb_001.webp",
+        "designer": {
+          "name": "이두라",
+          "description": "디자이너 소개 설명이 들어가는 부분입니다. 디자이너 소개 설명이 들어가는 부분입니다. 디자이너 소개 설명이 들어가는 부분입니다. 디자이너 소개 설명이 들어가는 부분입니다.",
+          "profileUrl": "https://ktfa-bucket.s3.ap-northeast-2.amazonaws.com/16/profile/designer_thumb.png"
+        },
+        "assets": {
+          "info": {
+            "name": "포근한 필로우 룩",
+            "description": "description",
+            "thumbnail": "https://ktfa-bucket.s3.ap-northeast-2.amazonaws.com/16/ar/ar_content_thumb_001.png",
+            "watermarkUrl": "https://ktfa-bucket.s3.ap-northeast-2.amazonaws.com/wordmark.png"
+          },
+          "aos": {
+            "avatarUrl": "",
+            "arUrl": "https://kt-meta-fashion.s3.ap-northeast-2.amazonaws.com/assets/aos/kt_wear_02",
+            "updateDt": 1605663586627
+          },
+          "ios": {
+            "avatarUrl": "",
+            "arUrl": "https://kt-meta-fashion.s3.ap-northeast-2.amazonaws.com/assets/ios/kt_wear_02",
+            "updateDt": 1605663586627
+          }
+        },
+        "type": ["ar"],
+        "tags": ["워브먼트", "WOVEMENT"],
+        "updateDt": 1605663586627
+      },
+      {
+        "id": "17",
+        "parentId": "2",
+        "contentTitle": "The Real Me",
+        "contentInfo": "(CT 설명) 전체 심지 작업 하여 오랜시간 변함없이  견고하고 구조적인 쉐입으로 안정감있게 떨어지는 실루엣의 싱글 브레스티드 코트 (VT 설명) 루즈 핏으로 떨어지는 실루엣의 슬리브리스 블레이저로 전체 심지 작업으로 오랜 시간 변함없이 견고하며 구조적인 쉐입을 연출 (PT 설명) Front side 플리츠의 스트레이트 핏 팬츠로 2개의 훅 앤드 아이, 히든 버튼 및 히든 플라켓의 2중 오픈/클로징 가능",
+        "thumbnail": "https://ktfa-bucket.s3.ap-northeast-2.amazonaws.com/17/main/top_thumb_001.webp",
+        "designer": {
+          "name": "이영은",
+          "description": "패션의류학 졸업 후 10년간의 다양한 패션회사에서 일해오다가 2020.01 Fromwhere 런칭하였으며, 현재는 국내는 물로 해외까지 다양하게 활동하고있다.",
+          "profileUrl": "https://ktfa-bucket.s3.ap-northeast-2.amazonaws.com/17/profile/designer_thumb.jpg"
+        },
+        "assets": {
+          "info": {
+            "name": "The Real Me",
+            "description": "description",
+            "thumbnail": "https://ktfa-bucket.s3.ap-northeast-2.amazonaws.com/17/ar/ar_content_thumb_001.png",
+            "watermarkUrl": "https://ktfa-bucket.s3.ap-northeast-2.amazonaws.com/wordmark.png"
+          },
+          "aos": {
+            "avatarUrl": "",
+            "arUrl": "https://kt-meta-fashion.s3.ap-northeast-2.amazonaws.com/assets/aos/kt_wear_04",
+            "updateDt": 1605663586627
+          },
+          "ios": {
+            "avatarUrl": "",
+            "arUrl": "https://kt-meta-fashion.s3.ap-northeast-2.amazonaws.com/assets/ios/kt_wear_04",
+            "updateDt": 1605663586627
+          }
+        },
+        "type": ["ar"],
+        "tags": ["프롬웨얼", "Fromwhere"],
+        "updateDt": 1605663586627
+      },
+      {
+        "id": "18",
+        "parentId": "2",
+        "contentTitle": "La Nueva Perla (새로운 진주)",
+        "contentInfo": "볼륨 있는 실루엣과 옵티컬 아트 패턴이 유니크한롱트렌치코트와 숏드레스를 매치하여 패미닌하면서도 과감함이 있는 현대 여성을 위한 의상",
+        "thumbnail": "https://ktfa-bucket.s3.ap-northeast-2.amazonaws.com/18/main/top_thumb_001.webp",
+        "designer": {
+          "name": "신한나",
+          "description": "신한나(HANNAH SHIN) 건축적인 실루엣을 기반으로 다양한 예술 장르들로부터 영감 받아 유니크하고 친환경적인 원단을 개발하여 사용합니다. 반전의 미학을 추구하며, 철학적 메시지를 담아 디자인하고자 합니다.",
+          "profileUrl": "https://ktfa-bucket.s3.ap-northeast-2.amazonaws.com/18/profile/designer_thumb.jpg"
+        },
+        "assets": {
+          "info": {
+            "name": "La Nueva Perla (새로운 진주)",
+            "description": "description",
+            "thumbnail": "https://ktfa-bucket.s3.ap-northeast-2.amazonaws.com/18/ar/ar_content_thumb_001.png",
+            "watermarkUrl": "https://ktfa-bucket.s3.ap-northeast-2.amazonaws.com/wordmark.png"
+          },
+          "aos": {
+            "avatarUrl": "",
+            "arUrl": "https://kt-meta-fashion.s3.ap-northeast-2.amazonaws.com/assets/aos/kt_wear_11",
+            "updateDt": 1605663586627
+          },
+          "ios": {
+            "avatarUrl": "",
+            "arUrl": "https://kt-meta-fashion.s3.ap-northeast-2.amazonaws.com/assets/ios/kt_wear_11",
+            "updateDt": 1605663586627
+          }
+        },
+        "type": ["ar"],
+        "tags": ["한나신", "HANNAH SHIN"],
+        "updateDt": 1605663586627
+      },
+      {
+        "id": "19",
+        "parentId": "2",
+        "contentTitle": "' WAVE of LOVE '",
+        "contentInfo": "사랑을 시각화한 하트 그래픽과 파도의 움직임을 연상시키는 드레이핑으로 입체적이고 볼륨감있는 로맨틱 룩",
+        "thumbnail": "https://ktfa-bucket.s3.ap-northeast-2.amazonaws.com/19/main/top_thumb_001.webp",
+        "designer": {
+          "name": "송현희, 최경호",
+          "description": "남성복 출신의 최경호 디자이너와 여성복 출신의 송현희 디자이너가 만들어가는 HOLY NUMBER 7은 매 시즌 성경을 기반으로 긍정적인 스토리를 이야기하며, 이 시대에 HOLY NUMBER 7만의 방식으로 긍정과 희망의 스토리를 녹여내 뻔하지 않고 'FUN' 한, 위트있지만 가볍지 않은 디자인으로 '입는 사람의 언어'가 되는 패션을 만들고자 합니다.",
+          "profileUrl": "https://ktfa-bucket.s3.ap-northeast-2.amazonaws.com/19/profile/designer_thumb.jpg"
+        },
+        "assets": {
+          "info": {
+            "name": "' WAVE of LOVE '",
+            "description": "description",
+            "thumbnail": "https://ktfa-bucket.s3.ap-northeast-2.amazonaws.com/19/ar/ar_content_thumb_001.png",
+            "watermarkUrl": "https://ktfa-bucket.s3.ap-northeast-2.amazonaws.com/wordmark.png"
+          },
+          "aos": {
+            "avatarUrl": "",
+            "arUrl": "https://kt-meta-fashion.s3.ap-northeast-2.amazonaws.com/assets/aos/kt_wear_01",
+            "updateDt": 1605663586627
+          },
+          "ios": {
+            "avatarUrl": "",
+            "arUrl": "https://kt-meta-fashion.s3.ap-northeast-2.amazonaws.com/assets/ios/kt_wear_01",
+            "updateDt": 1605663586627
+          }
+        },
+        "type": ["ar"],
+        "tags": ["홀리넘버세븐", "HOLY NUMBER 7"],
+        "updateDt": 1605663586627
+      }
+    ]
+}

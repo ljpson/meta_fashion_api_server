@@ -1,0 +1,63 @@
+{
+	"content": {
+		"id": "12",
+		"contentTitle": "graphic Printed Mat Bag",
+		"contentInfo": "곡선 디테일이 강조된 금속 프레임 방식 박스백에 탈부착이 가능한 스트랩을 사용하여 토트와 숄더 스타일. 자개 느낌의 셀룰로이드 체인 장식 등으로 다양하게 연출 가능",
+		"designer": {
+			"name": "하재경, 허인준",
+			"description": "nuer는 두 명의 디자이너인 하재경과 허인준이 만든 모던 클래식 감성의 패션 브랜드로 다년간 이탈리아와 중국 그리고 한국 패션 브랜드에서 쌓아온 경험과 감성을 바탕으로 2020년 7월 nuer의 핸드백 컬렉션을 론칭하였습니다.",
+			"profileUrl": "https://ktfa-bucket.s3.ap-northeast-2.amazonaws.com/12/profile/designer_thumb.jpg"
+		},
+		"type": [
+			"ar"
+		],
+		"tags": [
+			"뉴이",
+			"nuer"
+		],
+		"thumbnails": [
+			"https://ktfa-bucket.s3.ap-northeast-2.amazonaws.com/12/main/top_thumb_001.webp"
+		],
+		"concept": {
+			"title": "Concept",
+			"description": "concept description",
+			"url": [
+				"https://kt-meta-fashion.s3.ap-northeast-2.amazonaws.com/images/thumbnails/1.png"
+			]
+		},
+		"media": {
+			"title": "Making Film",
+			"description": "",
+			"url": [
+				"https://youtu.be/4fikvcuirtY",
+				"https://youtu.be/POe9SOEKotk"
+			]
+		},
+		"detail": {
+			"title": "Details",
+			"description": "상세이미지 설명",
+			"url": [
+				"https://kt-meta-fashion.s3.ap-northeast-2.amazonaws.com/images/thumbnails/1.png"
+			]
+		},
+		"assets": {
+			"info": {
+				"name": "graphic Printed Mat Bag",
+				"description": "description",
+				"thumbnail": "https://ktfa-bucket.s3.ap-northeast-2.amazonaws.com/12/ar/ar_content_thumb_001.png",
+				"watermarkUrl": "https://ktfa-bucket.s3.ap-northeast-2.amazonaws.com/wordmark.png"
+			},
+			"aos": {
+				"avatarUrl": "",
+				"arUrl": "https://kt-meta-fashion.s3.ap-northeast-2.amazonaws.com/assets/aos/kt_wear_04",
+				"updateDt": 1605663586627
+			},
+			"ios": {
+				"avatarUrl": "",
+				"arUrl": "https://kt-meta-fashion.s3.ap-northeast-2.amazonaws.com/assets/ios/kt_wear_04",
+				"updateDt": 1605663586627
+			}
+		},
+		"updateDt": 1605663586627
+	}
+}

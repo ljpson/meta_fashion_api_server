@@ -1,0 +1,57 @@
+<head>
+    <!-- 생략... -->
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <title>pro-pro</title>
+</head>
+<html>
+<body>
+<script src="https://accounts.google.com/gsi/client" async defer></script>
+<script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script>
+    function handleCredentialResponse(response) {
+        // 구글 로그인
+        var url = "/app/users/login";
+        var data = { 'tokenId': response.credential };
+        data = JSON.stringify(data);
+
+        //data에 inputdata를 json형식으로 넣고 이를 xmlhttprequest를 통해 post방식으로 보냅니다.
+        var xhr = new XMLHttpRequest();
+        xhr.open('POST', url);
+        xhr.setRequestHeader('Content-type', "application/json");
+        xhr.send(data);
+
+        //서버에서 결과가 도착하면 그것을 result div에 입력합니다.
+        xhr.addEventListener('load', function () {
+            console.log(xhr.responseText);
+        });
+
+        /*
+        // 구글 토큰 정보 가져오기
+        $.ajax({
+            url:"/app/users/info/"+response.credential,
+            type:"GET",
+            success: function(result) {
+                if (result) {
+                    console.log(result.data);
+                } else {
+                    alert("불러오기 실패");
+                }
+            }
+        });
+        */
+    }
+    window.onload = function () {
+        google.accounts.id.initialize({
+            client_id: "1036772479977-00gojjb2t0f2sl6ncm0cfmqia6kvrjg9.apps.googleusercontent.com",
+            callback: handleCredentialResponse
+        });
+        google.accounts.id.renderButton(
+            document.getElementById("buttonDiv"),
+            { theme: "outline", size: "large" }
+        );
+        google.accounts.id.prompt();
+    }
+</script>
+<div id="buttonDiv"></div>
+</body>
+</html>

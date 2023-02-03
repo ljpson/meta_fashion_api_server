@@ -1,0 +1,63 @@
+{
+	"content": {
+		"id": "11",
+		"contentTitle": "Bulky Man",
+		"contentInfo": "패턴모양을 통해 내부의 Padded 솜과 Shiny한 안감이 조화를 이뤄, Bulky한 자태를 연출해냈습니다. 이번 시즌 개발한 금속 지퍼 풀러는 새로운 타입으로, 본래 Satin 코팅 & 음각의 콤비대신 양각의 로고 타입을 선택하여 좀 더 로고에 집중할 수 있는 효과를 줄 수 있도록 개발하였습니다.",
+		"designer": {
+			"name": "이원재",
+			"description": "51퍼센트(51PERCENT)는 기계공학을 전공한 디자이너의 성향이 반영되어 구조적인 디자인과 메탈릭한 디테일이 제품 곳곳에서 드러납니다. 매 시즌 구조적인 실루엣과 디테일을 다양한 주제와 함께 선보입니다. 51퍼센트는 세련된 남성들이 즐길 수 있는, 상업성과 예술성을 두루 갖춘 제품을 선보입니다.",
+			"profileUrl": "https://ktfa-bucket.s3.ap-northeast-2.amazonaws.com/11/profile/designer_thumb.jpg"
+		},
+		"type": [
+			"ar"
+		],
+		"tags": [
+			"51퍼센트",
+			"51PERCENT"
+		],
+		"thumbnails": [
+			"https://ktfa-bucket.s3.ap-northeast-2.amazonaws.com/11/main/top_thumb_001.webp"
+		],
+		"concept": {
+			"title": "Concept",
+			"description": "concept description",
+			"url": [
+				"https://kt-meta-fashion.s3.ap-northeast-2.amazonaws.com/images/thumbnails/1.png"
+			]
+		},
+		"media": {
+			"title": "Making Film",
+			"description": "",
+			"url": [
+				"https://youtu.be/4fikvcuirtY",
+				"https://youtu.be/POe9SOEKotk"
+			]
+		},
+		"detail": {
+			"title": "Details",
+			"description": "상세이미지 설명",
+			"url": [
+				"https://kt-meta-fashion.s3.ap-northeast-2.amazonaws.com/images/thumbnails/1.png"
+			]
+		},
+		"assets": {
+			"info": {
+				"name": "Bulky Man",
+				"description": "description",
+				"thumbnail": "https://ktfa-bucket.s3.ap-northeast-2.amazonaws.com/11/ar/ar_content_thumb_001.png",
+				"watermarkUrl": "https://ktfa-bucket.s3.ap-northeast-2.amazonaws.com/wordmark.png"
+			},
+			"aos": {
+				"avatarUrl": "",
+				"arUrl": "https://kt-meta-fashion.s3.ap-northeast-2.amazonaws.com/assets/aos/kt_wear_02",
+				"updateDt": 1605663586627
+			},
+			"ios": {
+				"avatarUrl": "",
+				"arUrl": "https://kt-meta-fashion.s3.ap-northeast-2.amazonaws.com/assets/ios/kt_wear_02",
+				"updateDt": 1605663586627
+			}
+		},
+		"updateDt": 1605663586627
+	}
+}

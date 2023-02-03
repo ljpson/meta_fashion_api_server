@@ -1,0 +1,63 @@
+{
+	"content": {
+		"id": "17",
+		"contentTitle": "The Real Me",
+		"contentInfo": "(CT 설명) 전체 심지 작업 하여 오랜시간 변함없이  견고하고 구조적인 쉐입으로 안정감있게 떨어지는 실루엣의 싱글 브레스티드 코트 (VT 설명) 루즈 핏으로 떨어지는 실루엣의 슬리브리스 블레이저로 전체 심지 작업으로 오랜 시간 변함없이 견고하며 구조적인 쉐입을 연출 (PT 설명) Front side 플리츠의 스트레이트 핏 팬츠로 2개의 훅 앤드 아이, 히든 버튼 및 히든 플라켓의 2중 오픈/클로징 가능",
+		"designer": {
+			"name": "이영은",
+			"description": "패션의류학 졸업 후 10년간의 다양한 패션회사에서 일해오다가 2020.01 Fromwhere 런칭하였으며, 현재는 국내는 물로 해외까지 다양하게 활동하고있다.",
+			"profileUrl": "https://ktfa-bucket.s3.ap-northeast-2.amazonaws.com/17/profile/designer_thumb.jpg"
+		},
+		"type": [
+			"ar"
+		],
+		"tags": [
+			"프롬웨얼",
+			"Fromwhere"
+		],
+		"thumbnails": [
+			"https://ktfa-bucket.s3.ap-northeast-2.amazonaws.com/17/main/top_thumb_001.webp"
+		],
+		"concept": {
+			"title": "Concept",
+			"description": "concept description",
+			"url": [
+				"https://kt-meta-fashion.s3.ap-northeast-2.amazonaws.com/images/thumbnails/1.png"
+			]
+		},
+		"media": {
+			"title": "Making Film",
+			"description": "",
+			"url": [
+				"https://youtu.be/4fikvcuirtY",
+				"https://youtu.be/POe9SOEKotk"
+			]
+		},
+		"detail": {
+			"title": "Details",
+			"description": "상세이미지 설명",
+			"url": [
+				"https://kt-meta-fashion.s3.ap-northeast-2.amazonaws.com/images/thumbnails/1.png"
+			]
+		},
+		"assets": {
+			"info": {
+				"name": "The Real Me",
+				"description": "description",
+				"thumbnail": "https://ktfa-bucket.s3.ap-northeast-2.amazonaws.com/17/ar/ar_content_thumb_001.png",
+				"watermarkUrl": "https://ktfa-bucket.s3.ap-northeast-2.amazonaws.com/wordmark.png"
+			},
+			"aos": {
+				"avatarUrl": "",
+				"arUrl": "https://kt-meta-fashion.s3.ap-northeast-2.amazonaws.com/assets/aos/kt_wear_04",
+				"updateDt": 1605663586627
+			},
+			"ios": {
+				"avatarUrl": "",
+				"arUrl": "https://kt-meta-fashion.s3.ap-northeast-2.amazonaws.com/assets/ios/kt_wear_04",
+				"updateDt": 1605663586627
+			}
+		},
+		"updateDt": 1605663586627
+	}
+}

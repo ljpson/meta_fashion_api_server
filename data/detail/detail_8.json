@@ -1,0 +1,63 @@
+{
+	"content": {
+		"id": "8",
+		"contentTitle": "흥이 날리는 도포조끼 - 달빛 조선",
+		"contentInfo": "조선시대 선비들의 도포에서 영감받은 조끼에 너른바지를 착장",
+		"designer": {
+			"name": "황이슬",
+			"description": "'(현) 리슬 대표 (2014년 런칭) BTS 한복을 만든 디자이너 밀라노 패션위크에 오른 최초의 한복 브랜드 포브스, 뉴욕타임지가 주목한 한복 브랜드",
+			"profileUrl": "https://ktfa-bucket.s3.ap-northeast-2.amazonaws.com/8/profile/designer_thumb.jpg"
+		},
+		"type": [
+			"avatar",
+			"ar"
+		],
+		"tags": [
+			"리슬"
+		],
+		"thumbnails": [
+			"https://ktfa-bucket.s3.ap-northeast-2.amazonaws.com/8/main/top_thumb_001.jpg"
+		],
+		"concept": {
+			"title": "Concept",
+			"description": "concept description",
+			"url": [
+				"https://kt-meta-fashion.s3.ap-northeast-2.amazonaws.com/images/thumbnails/1.png"
+			]
+		},
+		"media": {
+			"title": "Making Film",
+			"description": "",
+			"url": [
+				"https://youtu.be/4fikvcuirtY",
+				"https://youtu.be/POe9SOEKotk"
+			]
+		},
+		"detail": {
+			"title": "Details",
+			"description": "상세이미지 설명",
+			"url": [
+				"https://kt-meta-fashion.s3.ap-northeast-2.amazonaws.com/images/thumbnails/1.png"
+			]
+		},
+		"assets": {
+			"info": {
+				"name": "name",
+				"description": "description",
+				"thumbnail": "thumbnail",
+				"watermarkUrl": "https://ktfa-bucket.s3.ap-northeast-2.amazonaws.com/wordmark.png"
+			},
+			"aos": {
+				"avatarUrl": "",
+				"arUrl": "https://kt-meta-fashion.s3.ap-northeast-2.amazonaws.com/assets/aos/kt_wear_05",
+				"updateDt": 1605663586627
+			},
+			"ios": {
+				"avatarUrl": "",
+				"arUrl": "https://kt-meta-fashion.s3.ap-northeast-2.amazonaws.com/assets/ios/kt_wear_05",
+				"updateDt": 1605663586627
+			}
+		},
+		"updateDt": 1605663586627
+	}
+}

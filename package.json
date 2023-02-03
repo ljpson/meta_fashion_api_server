@@ -1,0 +1,73 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "private": true,
+  "engines": {
+    "node": "14.18.0",
+    "npm": "6.14.15"
+  },
+  "scripts": {
+    "start": "tsc-watch --onSuccess \"nodemon dist/app.js\" ",
+    "forever-local": "SERVER_ENV=local forever start -w forever.json",
+    "forever-development": "SERVER_ENV=development forever start -w forever.json",
+    "forever-production": "SERVER_ENV=production forever start forever.json",
+    "forever-deploy": "npm install && tsc && SERVER_ENV=production forever start forever.json"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.0",
+    "@types/has": "^1.0.0",
+    "@types/jsonwebtoken": "^8.5.9",
+    "@types/morgan": "^1.9.3",
+    "@types/multer": "^1.4.7",
+    "@types/ncp": "^2.0.5",
+    "@types/node": "^18.11.9",
+    "@types/nodemailer": "^6.4.6",
+    "@types/uuid": "^9.0.0",
+    "@types/validator": "^13.7.10",
+    "dotenv": "^16.0.3",
+    "google-protobuf": "^3.21.2",
+    "module-alias": "^2.2.2",
+    "protobufjs": "^7.1.2",
+    "rimraf": "^3.0.2",
+    "shelljs": "^0.8.5",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.3"
+  },
+  "dependencies": {
+    "@grpc/grpc-js": "^1.7.3",
+    "@speedymonster/grpc-interceptors": "^0.2.5",
+    "@types/ioredis": "^4.28.10",
+    "aws-sdk": "^2.1261.0",
+    "bcrypt": "^5.1.0",
+    "change-case": "^4.1.2",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "express-fileupload": "^1.4.0",
+    "forever": "^4.0.3",
+    "fs-extra": "^10.1.0",
+    "google-auth-library": "^8.7.0",
+    "has": "^1.0.3",
+    "helmet": "^6.0.0",
+    "helmet-csp": "^3.4.0",
+    "ioredis": "^5.2.4",
+    "jsonwebtoken": "^8.5.1",
+    "mask-email-phone": "^1.0.2",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.1",
+    "mysql2": "^2.3.3",
+    "ncp": "^2.0.0",
+    "node-fetch": "^3.3.0",
+    "nodemailer": "^6.8.0",
+    "nodemon": "^2.0.20",
+    "tsc-watch": "^5.0.3",
+    "uuid": "^9.0.0",
+    "verify-apple-id-token": "^3.0.0",
+    "winston": "^3.8.2",
+    "winston-daily-rotate-file": "^4.7.1",
+    "yarn": "^1.22.19"
+  },
+  "_moduleAliases": {
+    "@src": "dist",
+    "@pb": "pb_models"
+  }
+}

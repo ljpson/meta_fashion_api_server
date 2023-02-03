@@ -1,0 +1,22 @@
+{
+  "maintenance": false,
+  "message": "점검중 입니다.",
+  "start_time" : "2021.11.01 11:00",
+  "end_time" : "2021.11.01 11:00",
+  "android_version": "0.0.1",
+  "android_version_code": "1",
+  "ios_version": "0.0.1",
+  "ios_build_number": "1",
+  "android_store": "com.kt.metafashion",
+  "ios_store": "",
+  "web_url": "",
+  "popup": {
+    "id": "0",
+    "title": "MetaCloset에 오신것을 환영합니다.",
+    "description": "당신의 옷장이 준비되어있습니다.옷장문을 열어 당신의 옷을 골라 입어보세요!",
+    "backgroundColor": "#ffffff",
+    "imageUrl": "https://kt-meta-fashion.s3.ap-northeast-2.amazonaws.com/images/img_pop_dummy.png",
+    "data": ""
+  }
+}
+

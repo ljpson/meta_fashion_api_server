@@ -1,0 +1,63 @@
+{
+	"content": {
+		"id": "18",
+		"contentTitle": "La Nueva Perla (새로운 진주)",
+		"contentInfo": "볼륨 있는 실루엣과 옵티컬 아트 패턴이 유니크한롱트렌치코트와 숏드레스를 매치하여 패미닌하면서도 과감함이 있는 현대 여성을 위한 의상",
+		"designer": {
+			"name": "신한나",
+			"description": "신한나(HANNAH SHIN) 건축적인 실루엣을 기반으로 다양한 예술 장르들로부터 영감 받아 유니크하고 친환경적인 원단을 개발하여 사용합니다. 반전의 미학을 추구하며, 철학적 메시지를 담아 디자인하고자 합니다.",
+			"profileUrl": "https://ktfa-bucket.s3.ap-northeast-2.amazonaws.com/18/profile/designer_thumb.jpg"
+		},
+		"type": [
+			"ar"
+		],
+		"tags": [
+			"한나신",
+			"HANNAH SHIN"
+		],
+		"thumbnails": [
+			"https://ktfa-bucket.s3.ap-northeast-2.amazonaws.com/18/main/top_thumb_001.webp"
+		],
+		"concept": {
+			"title": "Concept",
+			"description": "concept description",
+			"url": [
+				"https://kt-meta-fashion.s3.ap-northeast-2.amazonaws.com/images/thumbnails/1.png"
+			]
+		},
+		"media": {
+			"title": "Making Film",
+			"description": "",
+			"url": [
+				"https://youtu.be/4fikvcuirtY",
+				"https://youtu.be/POe9SOEKotk"
+			]
+		},
+		"detail": {
+			"title": "Details",
+			"description": "상세이미지 설명",
+			"url": [
+				"https://kt-meta-fashion.s3.ap-northeast-2.amazonaws.com/images/thumbnails/1.png"
+			]
+		},
+		"assets": {
+			"info": {
+				"name": "La Nueva Perla (새로운 진주)",
+				"description": "description",
+				"thumbnail": "https://ktfa-bucket.s3.ap-northeast-2.amazonaws.com/18/ar/ar_content_thumb_001.png",
+				"watermarkUrl": "https://ktfa-bucket.s3.ap-northeast-2.amazonaws.com/wordmark.png"
+			},
+			"aos": {
+				"avatarUrl": "",
+				"arUrl": "https://kt-meta-fashion.s3.ap-northeast-2.amazonaws.com/assets/aos/kt_wear_11",
+				"updateDt": 1605663586627
+			},
+			"ios": {
+				"avatarUrl": "",
+				"arUrl": "https://kt-meta-fashion.s3.ap-northeast-2.amazonaws.com/assets/ios/kt_wear_11",
+				"updateDt": 1605663586627
+			}
+		},
+		"updateDt": 1605663586627
+	}
+}
