@@ -4,6 +4,7 @@ interface DesignerDto {
   description: string;
   profile?: string;
   topYn: string;
+  topProfile: string;
   topPosition: number;
   brands: any[];
   brandTop1: string;

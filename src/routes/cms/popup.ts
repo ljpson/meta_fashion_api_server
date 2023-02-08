@@ -35,7 +35,7 @@ const upload = multer({
             } else {
                 path = TEMP_PATH;
             }
-            !fs.existsSync(path) && fs.mkdirSync(path);
+            !fs.existsSync(path) && fs.mkdirSync(path, {recursive: true});
             cb(null, path);
         },
         filename(req, file, cb) {

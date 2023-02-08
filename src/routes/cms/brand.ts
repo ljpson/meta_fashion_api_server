@@ -7,10 +7,19 @@ import multer from "multer";
 import fs from "fs";
 import {Designer} from "@src/services/designer";
 import {adminFilter} from "@src/utils/admin_flter";
+import AWS, {S3} from 'aws-sdk';
 
 const DEFAULT_PATH: string = Config.Env.File.FILE_PROFILE_PATH;
 const WEB_PROFILE_BASE: string = Config.Env.File.WEB_PROFILE_BASE;
 const TEMP_PATH = DEFAULT_PATH + "/brand/temporarily";
+let s3: S3;
+
+if (process.env.SERVER_ENV === Config.Const.LOCAL) {
+    s3 = new AWS.S3({
+        accessKeyId: process.env.AWS_ACCESS_KEY_ID,
+        secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY
+    });
+}
 
 const route = express.Router();
 
@@ -35,7 +44,7 @@ const upload = multer({
             } else {
                 path = TEMP_PATH;
             }
-            !fs.existsSync(path) && fs.mkdirSync(path);
+            !fs.existsSync(path) && fs.mkdirSync(path, {recursive: true});
             cb(null, path);
         },
         filename(req, file, cb) {
@@ -85,6 +94,13 @@ route.post("", checkTempDir, upload.fields([
             fs.readdirSync(newPath).forEach((file) => {
                 brandRequest.profile = `${WEB_PROFILE_BASE}/brand/${id}/${file}`
             });
+
+            // AWS S3환경 일 경우 추가처리
+            // if (process.env.SERVER_ENV === Config.Const.TEST) {
+            // 개발 임시
+            if (process.env.SERVER_ENV === Config.Const.LOCAL) {
+
+            }
 
             // 프로필 갱신
             Brand.save(brandRequest)

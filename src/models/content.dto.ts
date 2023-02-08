@@ -20,15 +20,18 @@ interface ContentDto {
   mediaDescription: string;
   conceptDescription: string;
   detailDescription: string;
-  avatarGender: string;
+  avatarFemaleYn: string;
+  avatarMaleYn: string;
   topImages: {id: number, path: string}[],
   conceptImages: {id: number, path: string}[],
   detailImages: {id: number, path: string}[],
   medias: {id: number, path: string}[],
   arContents: {id: number, path: string},
   arThumbnail: {id: number, path: string},
-  avatarContents: {id: number, path: string},
-  avatarThumbnail: {id: number, path: string},
+  avatarContentsFemale: {id: number, path: string},
+  avatarThumbnailFemale: {id: number, path: string},
+  avatarContentsMale: {id: number, path: string},
+  avatarThumbnailMale: {id: number, path: string},
   watermark: {id: number, path: string},
   showYn: number;
   deleteYn: number;
@@ -39,6 +42,7 @@ interface ContentDto {
 
   // tb_content_assets 테이블
   contentId: string;
-  fileName: string;
-  filePath: string;
+  contentsFilePath: string;
+  thumbnailFilePath: string;
+
 }

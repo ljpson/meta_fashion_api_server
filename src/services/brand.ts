@@ -252,6 +252,8 @@ export class Brand extends Default {
             sql += ` AND brand.name like '${'%'+queryParams.keywords+'%'}'`
         }
 
+        sql += ' ORDER BY update_date DESC'
+
         return sql;
     }
 

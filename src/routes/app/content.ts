@@ -17,7 +17,6 @@ route.get("", async (req: express.Request, res: express.Response) => {
     return await Content.totalCount(queryParams)
         .then(queryParams => Content.findAll(queryParams)
             .then(contents => {
-
                 const resList: any = [];
                 contents?.forEach((content) => {
                     //image가 존재할 경우 urlPrefix 추가
@@ -27,7 +26,8 @@ route.get("", async (req: express.Request, res: express.Response) => {
                     resList.push({
                         id: content?.id,
                         type: content.type,
-                        avatarGender: content.avatarGender,
+                        avatarFemaleYn: content.avatarFemaleYn,
+                        avatarMaleYn: content.avatarMaleYn,
                         userLikeYn: content.userLikeYn,
                         likeCount: content.likeCount,
                         title: content.title,
@@ -90,22 +90,21 @@ route.get("/assets", async (req: express.Request, res: express.Response) => {
 
         contents?.forEach((content) => {
             //image가 존재할 경우 urlPrefix 추가
-            if (!!content?.filePath) content.filePath = urlPrefix + content.filePath;
+            if (!!content?.contentsFilePath) content.contentsFilePath = urlPrefix + content.contentsFilePath;
+            if (!!content?.thumbnailFilePath) content.thumbnailFilePath = urlPrefix + content.thumbnailFilePath;
 
             resList.push({
                 id: content?.id,
-                contentId: content.contentId,
                 categoryId: content.categoryId,
-                avatarGender: content.avatarGender,
-                type: content.type,
-                filePath: content.filePath,
-                brandName: content.brandName,
-                description: content.description,
-                deleteYn: content.deleteYn,
-                createBy: content.createBy,
-                createDate: content.createDate,
-                updateBy: content.updateBy,
-                updateDate: content.updateDate
+                contentId: content.contentId,
+                contentName: content.contentName,
+                avatarFemaleYn: content.avatarFemaleYn,
+                avatarMaleYn: content.avatarMaleYn,
+                assetType: content.type,
+                contentsFilePath: content.contentsFilePath,
+                thumbnailFilePath: content.thumbnailFilePath,
+                brandId: content.brandId,
+                brandName: content.brandName
             });
         });
 
@@ -188,11 +187,17 @@ route.get("/:id", async (req: express.Request, res: express.Response) => {
                                 case 'AR_THUMBNAIL':
                                     content!.arThumbnail = {id: asset.id!, path: filePath}
                                     break;
-                                case 'AVATAR_CONTENTS':
-                                    content!.avatarContents = {id: asset.id!, path: filePath}
+                                case 'AVATAR_CONTENTS_FEMALE':
+                                    content!.avatarContentsFemale = {id: asset.id!, path: filePath}
                                     break;
-                                case 'AVATAR_THUMBNAIL':
-                                    content!.avatarThumbnail = {id: asset.id!, path: filePath}
+                                case 'AVATAR_THUMBNAIL_FEMALE':
+                                    content!.avatarThumbnailFemale = {id: asset.id!, path: filePath}
+                                    break;
+                                case 'AVATAR_CONTENTS_MALE':
+                                    content!.avatarContentsMale = {id: asset.id!, path: filePath}
+                                    break;
+                                case 'AVATAR_THUMBNAIL_MALE':
+                                    content!.avatarThumbnailMale = {id: asset.id!, path: filePath}
                                     break;
                                 case 'WATERMARK':
                                     content!.watermark = {id: asset.id!, path: filePath}

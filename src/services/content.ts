@@ -2,7 +2,7 @@ import promiseMysql from "mysql2/promise";
 import {Mysql} from "@src/utils/database/mysql";
 import {CustomError} from "@src/errors/CustomError";
 import {ErrorCode} from "@src/const/error_code";
-import {YN} from "@src/models/enums";
+import {Gender, YN} from "@src/models/enums";
 import {Default} from "@src/services/default";
 
 export class Content extends Default{
@@ -34,8 +34,8 @@ export class Content extends Default{
       `
       INSERT INTO metafashion.tb_contents (
         id, category_id, designer_id, type, title, description, tags, content_name, 
-        media_description, detail_description, avatar_gender, show_yn, delete_yn, create_by, create_date
-      ) VALUES (null, null, null, null, null, null, null, null, null, null, null, null, null, null, NOW())
+        media_description, detail_description, avatar_female_yn, avatar_male_yn, show_yn, delete_yn, create_by, create_date
+      ) VALUES (null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, NOW())
     `
     );
 
@@ -237,10 +237,10 @@ export class Content extends Default{
           INSERT INTO metafashion.tb_contents (
             category_id, designer_id, brand_id, type, title, description, tags, 
             content_name, media_description, concept_description, detail_description, 
-            avatar_gender, show_yn, delete_yn, create_by, create_date, update_by, update_date
+            avatar_female_yn, avatar_male_yn, show_yn, delete_yn, create_by, create_date, update_by, update_date
           ) VALUES (?, ?, ?, ?, ?, ?, ?,
                 ?, ?, ?, ?,
-                ?, ?, ?, ?, NOW(), ?, NOW());
+                ?, ?, ?, ?, ?, NOW(), ?, NOW());
           `,
             [
                 Number(contentRequest.categoryId),
@@ -254,7 +254,8 @@ export class Content extends Default{
                 contentRequest.mediaDescription,
                 contentRequest.conceptDescription,
                 contentRequest.detailDescription,
-                contentRequest.avatarGender,
+                contentRequest.avatarFemaleYn,
+                contentRequest.avatarMaleYn,
                 contentRequest.showYn,
                 YN.N,
                 contentRequest.createBy,
@@ -284,7 +285,8 @@ export class Content extends Default{
             media_description = ?, 
             concept_description = ?, 
             detail_description = ?, 
-            avatar_gender = ?, 
+            avatar_female_yn = ?, 
+            avatar_male_yn = ?, 
             show_yn = ?,
             update_by = ?,
             update_date = NOW()
@@ -302,7 +304,8 @@ export class Content extends Default{
                 contentRequest.mediaDescription,
                 contentRequest.conceptDescription,
                 contentRequest.detailDescription,
-                contentRequest.avatarGender,
+                contentRequest.avatarFemaleYn,
+                contentRequest.avatarMaleYn,
                 contentRequest.showYn,
                 contentRequest.updateBy,
                 contentRequest.id
@@ -321,6 +324,15 @@ export class Content extends Default{
           SELECT
                 count(1) AS totalCount
             FROM metafashion.tb_contents as content
+            LEFT JOIN (select id, name FROM metafashion.tb_categories
+                                  WHERE delete_yn = 'N') AS category
+            ON content.category_id = category.id
+            LEFT JOIN (SELECT id, name, profile FROM metafashion.tb_designers
+                                  WHERE delete_yn = 'N') AS designer
+            ON content.designer_id = designer.id
+            LEFT JOIN (SELECT id, name FROM metafashion.tb_brands
+                                  WHERE delete_yn = 'N') AS brand
+            ON content.brand_id = brand.id
             WHERE delete_yn = ?
           `,
             [
@@ -355,9 +367,12 @@ export class Content extends Default{
             sql += ` AND content.type = '`+ queryParams.type + `'`;
         }
         //아바타 성별 검색 - Main
-        if (queryParams.type == 'AVATAR'|| queryParams.type == 'BOTH') {
-            if (!!queryParams.avatarGender) {
-                sql += ` AND content.avatar_gender = '`+ queryParams.avatarGender + `'`;
+        if (!!queryParams.avatarGender && (queryParams.type == 'AVATAR'|| queryParams.type == 'BOTH')) {
+            if (queryParams.avatarGender === Gender.FEMALE) {
+                sql += ` AND content.avatar_female_yn = '`+ YN.Y + `'`;
+            }
+            if (queryParams.avatarGender === Gender.MALE) {
+                sql += ` AND content.avatar_male_yn = '`+ YN.Y + `'`;
             }
         }
         //키워드 통합검색 - CMS
@@ -382,7 +397,8 @@ export class Content extends Default{
                 SELECT
                     content.id,
                     content.type,
-                    avatar_gender,
+                    avatar_female_yn,
+                    avatar_male_yn,
                     title,
                     description,
                     tags,
@@ -456,12 +472,19 @@ export class Content extends Default{
         }
         //피드타입 검색 - Main
         if (!!queryParams.type) {
-            sql += ` AND content.type = '`+ queryParams.type + `'`;
+            if (queryParams.type == 'AVATAR' || queryParams.type == 'AR') {
+                sql += ` AND (content.type = '`+ queryParams.type + `' OR content.type = 'BOTH') `;
+            } else{
+                sql += ` AND content.type = '`+ queryParams.type + `'`;
+            }
         }
         //아바타 성별 검색 - Main
-        if (queryParams.type == 'AVATAR'|| queryParams.type == 'BOTH') {
-            if (!!queryParams.avatarGender) {
-                sql += ` AND content.avatar_gender = '`+ queryParams.avatarGender + `'`;
+        if (!!queryParams.avatarGender && (queryParams.type == 'AVATAR'|| queryParams.type == 'BOTH')) {
+            if (queryParams.avatarGender === Gender.FEMALE) {
+                sql += ` AND content.avatar_female_yn = '`+ YN.Y + `'`;
+            }
+            if (queryParams.avatarGender === Gender.MALE) {
+                sql += ` AND content.avatar_male_yn = '`+ YN.Y + `'`;
             }
         }
         //키워드 통합검색 - CMS
@@ -476,7 +499,6 @@ export class Content extends Default{
         } else {
             sql += ` ORDER BY content.update_date DESC`
         }
-
 
         return sql;
     }
@@ -502,7 +524,8 @@ export class Content extends Default{
                     media_description,
                     concept_description,
                     detail_description,
-                    avatar_gender,
+                    avatar_female_yn,
+                    avatar_male_yn,
                     show_yn,
                     asset.file_path AS thumbnail,
                     designer.id AS designer_id,
@@ -558,7 +581,8 @@ export class Content extends Default{
                     likes.like_yn as user_like_yn,
                     IFNULL(contentLike.like_count, 0) AS like_count,
                     type,
-                    avatar_gender,
+                    avatar_female_yn,
+                    avatar_male_yn,
                     title,
                     content.description,
                     content_name,
@@ -626,7 +650,8 @@ export class Content extends Default{
                     media_description,
                     concept_description,
                     detail_description,
-                    avatar_gender,
+                    avatar_female_yn,
+                    avatar_male_yn,
                     show_yn,
                     asset.file_path AS thumbnail,
                     designer.id AS designer_id,
@@ -715,10 +740,6 @@ export class Content extends Default{
         if (!!queryParams.type) {
             sql += ` AND asset.type = '`+ queryParams.type + `'`;
         }
-        if (!!queryParams.avatarGender) {
-            sql += ` AND content.avatar_gender = '`+ queryParams.avatarGender + `'`;
-        }
-
         sql += ` GROUP BY category.id
                  ORDER BY category.position `;
 
@@ -735,40 +756,46 @@ export class Content extends Default{
             `
             SELECT
                 asset.id,
-                asset.content_id,
                 content.category_id,
-                content.avatar_gender,
+                asset.content_id,
+                content.content_name,
+                content.avatar_female_yn,
+                content.avatar_male_yn,
                 asset.type,
-                asset.file_path,
+                asset2.file_path as contentsFilePath,
+                asset.file_path as thumbnailFilePath,
                 content.brand_id,
-                brand.name as brand_name,
-                content.description
+                brand.name as brand_name
             FROM metafashion.tb_content_assets as asset
             JOIN
-                (SELECT
-                    id,
-                    category_id,
-                    avatar_gender,
-                    brand_id,
-                    description
+                (SELECT id,
+                        category_id,
+                        content_name,
+                        avatar_female_yn,
+                        avatar_male_yn,
+                        brand_id
                 FROM tb_contents
                 WHERE delete_yn='N'
                     AND show_yn='Y') as content
             ON content.id = asset.content_id
             LEFT JOIN
-                (SELECT
-                    id,
-                    name
+                (SELECT id,
+                        name
                 FROM tb_brands) as brand
             ON brand.id = content.brand_id
+            LEFT JOIN
+                (SELECT content_id,
+                        type,
+                        file_path
+                 FROM tb_content_assets
+                 WHERE delete_yn='N') AS asset2
+            ON asset2.content_id = asset.content_id
+                   AND asset2.type = REPLACE(asset.type, 'THUMBNAIL', 'CONTENTS')
             WHERE asset.delete_yn = 'N'
             `;
 
         if (!!queryParams.type) {
             sql += ` AND asset.type = '`+ queryParams.type + `'`;
-        }
-        if (!!queryParams.avatarGender) {
-            sql += ` AND content.avatar_gender = '`+ queryParams.avatarGender + `'`;
         }
         // 카테고리 별로 조회하게 된다면 필요한 조건
         if (!!queryParams.categoryId) {
@@ -806,7 +833,7 @@ export class Content extends Default{
     private static getUpdateByIdQuery(content: ContentDto, id: number) {
         return promiseMysql.format(
             `UPDATE metafashion.tb_contents SET category_id = ?, designer_id = ?, brand_id = ?, type = ?, title = ?, description = ?, tags = ? 
-      contentName = ?, mediaDescription = ?, conceptDescription = ?, detailDescription = ?, avatarGender = ?, show_yn = ?, delete_yn = ?, update_by = ?, update_dt = NOW() WHERE content_id= ? `,
+      content_name = ?, media_description = ?, concept_description = ?, detail_description = ?, avatar_female_yn = ?, avatar_male_yn = ?, show_yn = ?, delete_yn = ?, update_by = ?, update_dt = NOW() WHERE content_id= ? `,
             [
                 content.categoryId,
                 content.designerId,
@@ -819,7 +846,8 @@ export class Content extends Default{
                 content.mediaDescription,
                 content.conceptDescription,
                 content.detailDescription,
-                content.avatarGender,
+                content.avatarFemaleYn,
+                content.avatarMaleYn,
                 content.showYn,
                 content.deleteYn,
                 content.updateBy,

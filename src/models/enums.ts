@@ -12,8 +12,10 @@ export const Asset = {
     MEDIA: 'MEDIA',
     AR_CONTENTS: 'AR_CONTENTS',
     AR_THUMBNAIL: 'AR_THUMBNAIL',
-    AVATAR_CONTENTS: 'AVATAR_CONTENTS',
-    AVATAR_THUMBNAIL: 'AVATAR_THUMBNAIL',
+    AVATAR_CONTENTS_FEMALE: 'AVATAR_CONTENTS_FEMALE',
+    AVATAR_THUMBNAIL_FEMALE: 'AVATAR_THUMBNAIL_FEMALE',
+    AVATAR_CONTENTS_MALE: 'AVATAR_CONTENTS_MALE',
+    AVATAR_THUMBNAIL_MALE: 'AVATAR_THUMBNAIL_MALE',
     WATERMARK: 'WATERMARK'
 } as const;
 type Asset = typeof Asset[keyof typeof Asset];
@@ -39,3 +41,9 @@ export const AdminAuthority = {
     SUPERADMIN: "SUPERADMIN"
 } as const;
 type AdminAuthority = typeof AdminAuthority[keyof typeof AdminAuthority];
+// 성별
+export const Gender = {
+    FEMALE: "FEMALE",
+    MALE: "MALE"
+} as const;
+type Gender = typeof Gender[keyof typeof Gender];

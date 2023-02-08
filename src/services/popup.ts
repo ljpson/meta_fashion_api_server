@@ -151,7 +151,7 @@ export class Popup extends Default {
         if (!!queryParams.keywords) {
             sql += ` AND popup.name like '${'%' + queryParams.keywords + '%'}'`
         }
-        sql += ` ORDER BY create_date DESC`
+        sql += ` ORDER BY update_date DESC`
 
         return sql;
     }

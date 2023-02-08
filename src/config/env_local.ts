@@ -37,7 +37,7 @@ export class EnvLocal {
     // 콘텐츠 이미지 스토리지 접근 경로
     public static readonly FILE_CONTENTS_PATH: string = path.resolve("resources", "contents");
     // 팝업 이미지 스토리지 접근 경로
-    public static readonly FILE_POPUP_PATH: string = path.resolve("resources", "popup");
+    public static readonly FILE_POPUP_PATH: string = path.resolve("resources", "popups");
     // 프로필 이미지 스토리지 접근 경로
     public static readonly FILE_PROFILE_PATH: string = path.resolve("resources", "profile");
 

@@ -37,7 +37,7 @@
     "@grpc/grpc-js": "^1.7.3",
     "@speedymonster/grpc-interceptors": "^0.2.5",
     "@types/ioredis": "^4.28.10",
-    "aws-sdk": "^2.1261.0",
+    "aws-sdk": "^2.1310.0",
     "bcrypt": "^5.1.0",
     "change-case": "^4.1.2",
     "cors": "^2.8.5",

@@ -26,7 +26,7 @@ const upload = multer({
             let path = DEFAULT_PATH;
             path = path + "/temporarily/" + snakeCase(file.fieldname);
 
-            !fs.existsSync(path) && fs.mkdirSync(path);
+            !fs.existsSync(path) && fs.mkdirSync(path, {recursive: true});
             cb(null, path);
         },
         filename(req, file, cb) {
@@ -54,7 +54,7 @@ const update = multer({
             let path = `${DEFAULT_PATH}/${id}`;
 
             path = `${path}/${snakeCase(file.fieldname)}`;
-            !fs.existsSync(path) && fs.mkdirSync(path);
+            !fs.existsSync(path) && fs.mkdirSync(path, {recursive: true});
             cb(null, path);
         },
         filename(req, file, cb) {
@@ -217,8 +217,10 @@ route.post("", checkTempDir, upload.fields([
     {name: "detailImage"},
     {name: "arContents"},
     {name: "arThumbnail"},
-    {name: "avatarContents"},
-    {name: "avatarThumbnail"},
+    {name: "avatarContentsFemale"},
+    {name: "avatarThumbnailFemale"},
+    {name: "avatarContentsMale"},
+    {name: "avatarThumbnailMale"},
     {name: "watermark"},
 ]), adminFilter, async (req: express.Request, res: express.Response) => {
     const admin: AdminRequest = req.body.admin;
@@ -361,11 +363,17 @@ route.get("/:id", async (req: express.Request, res: express.Response) => {
                             case 'AR_THUMBNAIL':
                                 content!.arThumbnail = {id: asset.id!, path: filePath}
                                 break;
-                            case 'AVATAR_CONTENTS':
-                                content!.avatarContents = {id: asset.id!, path: filePath}
+                            case 'AVATAR_CONTENTS_FEMALE':
+                                content!.avatarContentsFemale = {id: asset.id!, path: filePath}
                                 break;
-                            case 'AVATAR_THUMBNAIL':
-                                content!.avatarThumbnail = {id: asset.id!, path: filePath}
+                            case 'AVATAR_THUMBNAIL_FEMALE':
+                                content!.avatarThumbnailFemale = {id: asset.id!, path: filePath}
+                                break;
+                            case 'AVATAR_CONTENTS_MALE':
+                                content!.avatarContentsMale = {id: asset.id!, path: filePath}
+                                break;
+                            case 'AVATAR_THUMBNAIL_MALE':
+                                content!.avatarThumbnailMale = {id: asset.id!, path: filePath}
                                 break;
                             case 'WATERMARK':
                                 content!.watermark = {id: asset.id!, path: filePath}
@@ -393,8 +401,10 @@ route.post(
         {name: "detailImage"},
         {name: "arContents"},
         {name: "arThumbnail"},
-        {name: "avatarContents"},
-        {name: "avatarThumbnail"},
+        {name: "avatarContentsFemale"},
+        {name: "avatarThumbnailFemale"},
+        {name: "avatarContentsMale"},
+        {name: "avatarThumbnailMale"},
         {name: "watermark"},
     ]),
     adminFilter, async (req: express.Request, res: express.Response) => {

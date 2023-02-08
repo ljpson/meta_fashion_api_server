@@ -27,7 +27,8 @@ interface ContentRequest {
   mediaDescription: string;
   conceptDescription: string;
   detailDescription: string;
-  avatarGender: string;
+  avatarFemaleYn: string;
+  avatarMaleYn: string;
   showYn: string;
   assetIds: string;
   createBy: string;
@@ -63,6 +64,8 @@ interface DesignerRequest {
   description: string;
   profile: string;
   topYn: string;
+
+  topProfile: string;
   topPosition: number;
   brands: string;
   showYn: number;

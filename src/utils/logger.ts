@@ -65,7 +65,7 @@ const lampLogger: Logger = winston.createLogger({
       level: 'info',
       datePattern: 'YYYY-MM-DD',
       dirname: `${logDir}/lamp`,
-      filename: `lamp-'%DATE%'.log`,
+      filename: `lamp-%DATE%.log`,
       // filename: `%DATE%.log`,
       maxFiles: 30,  // 30일치 로그 파일 저장
       zippedArchive: true,

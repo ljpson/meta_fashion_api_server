@@ -47,18 +47,23 @@ route.get("/:id", async (req: express.Request, res: express.Response) => {
 
     return await User.findById(id)
         .then(user => {
-            //image가 존재할 경우 urlPrefix 추가
-            if (!!user?.profile) user.profile = urlPrefix + user?.profile;
+            let result;
+            if(!!user) {
+                //image가 존재할 경우 urlPrefix 추가
+                if (!!user?.profile) user.profile = urlPrefix + user?.profile;
 
-            let result = {
-                id: user?.id,
-                email: user?.email,
-                nickname: user?.nickname,
-                profile: user?.profile,
-                gender: user?.gender
-            };
+                result = {
+                    id: user?.id,
+                    email: user?.email,
+                    nickname: user?.nickname,
+                    profile: user?.profile,
+                    gender: user?.gender
+                };
+            } else {
+                result = "id에 맞는 데이터가 없거나 탈퇴한 회원입니다."
+            }
 
-            Policy.successWithData(res, result)
+                Policy.successWithData(res, result)
         });
 });
 
@@ -119,7 +124,6 @@ route.get("/:id/likes", async (req: express.Request, res: express.Response) => {
                     resList.push({
                         id: content?.id,
                         type: content.type,
-                        avatarGender: content.avatarGender,
                         userLikeYn: content.userLikeYn,
                         likeCount: content.likeCount,
                         title: content.title,
@@ -197,9 +201,7 @@ route.post("/login", async (req: express.Request, res: express.Response) => {
             message: "success",
             data: {
                 message : "프로필 입력(회원가입) 페이지로 이동 (URL 추가 필요)",
-                // @ts-ignore
                 email : googleInfo.email,
-                // @ts-ignore
                 profile : googleInfo.picture
             }
         });
@@ -238,13 +240,20 @@ route.post("/:id/save", async (req: express.Request, res: express.Response) => {
         return User.successWithData(res, "성별은 FEMALE과 MALE만 입력 가능합니다.");
     } else if (user != null) {
         userRequest.id = user.id;
-        await User.saveGoogleUser(userRequest);
-        user = await User.findById(id);
-        return res.status(200).json({
-            status: ErrorCode.OK,
-            message: "success",
-            data: user
-        })
+        const first = new Promise((resolve, reject) => {
+            User.saveGoogleUser(userRequest);
+            resolve(null);
+        });
+        const second = new Promise((resolve, reject) => {
+            resolve(User.findById(id));
+        });
+        Promise.all([first, second]).then(result => {
+            return res.status(200).json({
+                status: ErrorCode.OK,
+                message: "success",
+                data: result[1]
+            })
+        });
     } else {
         return User.successWithData(res, "id에 맞는 데이터가 없습니다.");
     }

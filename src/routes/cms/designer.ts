@@ -19,10 +19,14 @@ const upload = multer({
     storage: multer.diskStorage({
         destination: (req, file, cb) => {
             const {id} = req.params;
+            const fieldName = file.fieldname;
 
             let path: fs.PathLike;
             if (!!id) {
                 path = `${DEFAULT_PATH}/designer/${id}`;
+                if (fieldName === 'topProfile') {
+                    path = `${DEFAULT_PATH}/designer/${id}/top`;
+                }
 
                 // 업로드 파일 이 존재 할 경우 해당 디자이너 프로필 삭제
                 try {
@@ -35,8 +39,11 @@ const upload = multer({
                 }
             } else {
                 path = TEMP_PATH;
+                if (fieldName === 'topProfile') {
+                    path = `${path}/top`;
+                }
             }
-            !fs.existsSync(path) && fs.mkdirSync(path);
+            !fs.existsSync(path) && fs.mkdirSync(path, {recursive: true});
             cb(null, path);
         },
         filename(req, file, cb) {
@@ -66,6 +73,7 @@ const checkTempDir = (
 // 디자이너 등록
 route.post("", checkTempDir, upload.fields([
     {name: "profile"},
+    {name: "topProfile"},
 ]), adminFilter, async (req: express.Request, res: express.Response) => {
     const admin: AdminRequest = req.body.admin;
     const designerRequest: DesignerRequest = req.body;
@@ -87,6 +95,13 @@ route.post("", checkTempDir, upload.fields([
                 designerRequest.profile = `${WEB_PROFILE_BASE}/designer/${id}/${file}`
             });
 
+            // top 디자이너 프로필
+            if (designerRequest.topYn === 'Y') {
+                fs.readdirSync(`${newPath}/top`).forEach((file) => {
+                    designerRequest.topProfile = `${WEB_PROFILE_BASE}/designer/${id}/top/${file}`
+                });
+            }
+
             // 프로필 갱신
             Designer.save(designerRequest)
                 .catch(e => Designer.fail(res, e));
@@ -99,6 +114,7 @@ route.post("", checkTempDir, upload.fields([
 // 디자이너 수정
 route.post("/:id/save", checkTempDir, upload.fields([
     {name: "profile"},
+    {name: "topProfile"},
 ]), adminFilter, async (req: express.Request, res: express.Response) => {
     const admin: AdminRequest = req.body.admin;
     const designerRequest: DesignerRequest = req.body;
@@ -109,8 +125,16 @@ route.post("/:id/save", checkTempDir, upload.fields([
     if (!!files) {
         // @ts-ignore
         const profile = files.profile[0]
+
         // 프로파일 정보 갱신
         designerRequest.profile = `${WEB_PROFILE_BASE}/designer/${designerRequest.id}/${profile.filename}`
+
+        // top 디자이너 정보 갱신
+        if (designerRequest.topYn === 'Y') {
+            // @ts-ignore
+            const topProfile = files.topProfile[0]
+            designerRequest.topProfile = `${WEB_PROFILE_BASE}/designer/${designerRequest.id}/top/${topProfile.filename}`
+        }
     }
 
     return await Designer.save(designerRequest)
@@ -174,6 +198,8 @@ route.get("/:id", async (req: express.Request, res: express.Response) => {
                         type: designer?.name,
                         contents: designer?.description,
                         profile: `${urlPrefix}${designer?.profile}`,
+                        topYn: designer?.topYn,
+                        topProfile: `${urlPrefix}${designer?.topProfile}`,
                         showYn: designer?.showYn,
                         brands: brands,
                         contactAll: designer?.contactAll,
