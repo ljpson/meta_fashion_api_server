@@ -10,6 +10,6 @@ ssh ubuntu@3.39.252.42 <<EOF
     npm install -g ts-node
     npm install -g pm2
     pm2 install typescript
-    pm2 restart ecosystem.config.js
+    pm2 restart SERVER_ENV=local dist/app.js
     exit
 EOF
